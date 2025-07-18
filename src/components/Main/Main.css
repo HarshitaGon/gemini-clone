@@ -123,13 +123,16 @@
     padding: 0px 5%;
     max-height: 70vh;
     overflow-y: scroll;
-    scrollbar-width: none;        /* Firefox */
-    -ms-overflow-style: none;     /* Internet Explorer and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer and Edge */
 }
 
 .result::-webkit-scrollbar {
     /* Hides scrollbar in Chrome, Safari, and Edge Chromium */
-    display: none;                /* WebKit browsers */
+    display: none;
+    /* WebKit browsers */
 }
 
 .result-title {
@@ -168,10 +171,11 @@
 }
 
 @keyframes loader {
-    0%{
+    0% {
         background-position: -800px 0px;
     }
-    100%{
+
+    100% {
         background-position: 800px 0px;
     }
 }
@@ -180,4 +184,23 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 1.8;
+}
+
+@media (max-width:600px) {
+    .main-bottom input {
+        flex: none;
+        width: 150px;
+    }
+
+    .main-bottom img {
+        width: 20px;
+    }
+
+    .search-box {
+        padding: 5px 10px;
+    }
+
+    .search-box div {
+        gap: 5px;
+    }
 }
